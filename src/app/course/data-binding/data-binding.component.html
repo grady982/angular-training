@@ -1,0 +1,81 @@
+<div class="course-container">
+    <div class="course-content">
+        <h2> String Interpolation</h2>
+        <p>{{ title }}</p>
+        <p>{{ getTitle() }}</p>
+        <p>{{ isTitle ? 'data binding' : '' }}</p>
+
+        <hr>
+
+        <h2> Property Binding </h2>
+        <h3>HTML attributes</h3>
+        <div>
+            <img alt="item" [src]="imageUrl" width="160" height="120">
+        </div>
+        <button type="button" [disabled]="isButtonDisabled">Disabled Button</button>
+        <h3>Attribute Directive</h3>
+        <p [ngClass]="{ 'blueColor': true }">blue color by ngClass</p>
+        <p [ngStyle]="{ 'color': 'red'}">red color by ngStyle</p>
+
+        <hr>
+
+        <h2> Event Binding </h2>
+
+        <button type="button" (click)="onButtonClick()">Click</button>
+        <div style="margin-top: 10px;">
+            <input type="text" (keyup)="onInput($event)">
+        </div>
+        <P>Input Result: {{ result }}</P>
+
+        <div>
+            <input id="myCheckbox" type="checkbox" [checked]="isChecked" (change)="isChecked = !isChecked">
+            <span>Checkbox</span>
+        </div>
+        <p>Checkbox Result: {{ isChecked }}</p>
+
+        <h2> Two Way Binding </h2>
+
+        <div>
+            <input id="myCheckbox" type="checkbox" [(ngModel)]="isChecked2">
+            <span>Checkbox</span>
+        </div>
+        <p>Checkbox Result: {{ isChecked2 }}</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display: none;">
+    <h2>Assignment 1</h2>
+    <h3>To Do List</h3>
+    <button (click)="onAddClick()">Add</button>
+
+    <ul>
+        <li style="margin: 25px 0px 25px 0px;" *ngFor="let item of toDoList">
+        <div style="display: flex;">
+            <!-- <input type="checkbox" [checked]="item.isFinish" (change)="onCheckboxChange(item)"> -->
+            <input type="checkbox" [(ngModel)]="item.isFinish">
+            <h4 [ngClass]="{'redColor': item.isUrgent}" style="margin: 0px;">{{item.title}}</h4>
+        </div>
+        <p>{{item.content}}</p>
+        </li>
+    </ul>
+    
+    <button (click)="onSave()">Save</button>
+</div>

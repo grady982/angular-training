@@ -1,0 +1,15 @@
+.blueColor {
+    color: blue;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .course-content {
+        width: 70%; 
+        margin-bottom: 40px;
+    }
+}
+
