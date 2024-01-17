@@ -1,3 +1,14 @@
 <h1 style="text-align: center;">Course</h1>
-<router-outlet></router-outlet>
+
+<div class="btn-group">
+    <button (click)="onBtnClick('data-binding')">Section1: Data Binding</button>
+    <button (click)="onBtnClick('builtin-directive')">Section2: Directives</button>
+</div>
+
+<div class="course-container">
+    <div class="course-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
 

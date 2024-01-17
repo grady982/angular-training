@@ -1,0 +1,44 @@
+<h1> Built-in Directives </h1>
+
+<h2>Structural Directive</h2>
+
+<h3>ngIf</h3>
+<button (click)="isDisplay = !isDisplay">{{ isDisplay ? '隱藏' : '顯示' }}</button>
+<p *ngIf="isDisplay">如果 isDisplay 你可以看到我</p>
+
+<h3>ngFor</h3>
+<button (click)="onAddButtonClick()">Add Item</button>
+<ul>
+    <li *ngFor="let item of itemList">
+        {{ item }}
+    </li>
+</ul>
+
+<hr>
+
+<h2>Attribute Directive</h2>
+
+<h3>ngStyle</h3>
+
+<p [ngStyle]="currentStyle">使用 NgStyle Attribute Directive 改變 element Style</p>
+<p [ngStyle]="{'color': isError ? 'red' : 'black'}">訊息通知</p>
+<p [ngStyle]="getCurrentStyle()">使用 NgStyle Attribute Directive 改變 element Style</p>
+
+<h3>ngClass</h3>
+
+<p [ngClass]="isBlueColor ? 'blueColor': ''">使用 NgClass Attribute Directive 改變 element Style</p>
+<p [ngClass]="currentClasses">使用 NgClass Attribute Directive 改變 element Style</p>
+<p [ngClass]="{'blueColor': isBlueColor}">使用 NgClass Attribute Directive 改變 element Style</p>
+
+<h3>ngModel</h3>
+<div>
+    <input type="text" [(ngModel)]="item">
+</div>
+<p>Result1: {{ item }}</p>
+
+<div>
+    <input type="text" [ngModel]="item2" (ngModelChange)="setUpperCaseName($event)">
+</div>
+<p>Result2: {{ item2 }}</p>
+
+
