@@ -6,6 +6,7 @@ import { CourseRoutingModule } from './course-routing.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { CourseComponent } from './course/course.component';
 import { BuiltinDirectiveComponent } from './builtin-directive/builtin-directive.component';
+import { Assignment1Component } from './assignment1/assignment1.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { BuiltinDirectiveComponent } from './builtin-directive/builtin-directive
     DataBindingComponent,
     CourseComponent,
     BuiltinDirectiveComponent,
+    Assignment1Component,
   ],
   imports: [
     CommonModule,

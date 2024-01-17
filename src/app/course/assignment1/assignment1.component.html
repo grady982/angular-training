@@ -1,0 +1,16 @@
+<h2>Assignment 1</h2>
+<h3>To Do List</h3>
+<button (click)="onAddClick()">Add</button>
+
+<ul>
+    <li style="margin: 25px 0px 25px 0px;" *ngFor="let item of toDoList">
+    <div style="display: flex;">
+        <!-- <input type="checkbox" [checked]="item.isFinish" (change)="onCheckboxChange(item)"> -->
+        <input type="checkbox" [(ngModel)]="item.isFinish">
+        <h4 [ngClass]="{'redColor': item.isUrgent}" style="margin: 0px;">{{item.title}}</h4>
+    </div>
+    <p>{{item.content}}</p>
+    </li>
+</ul>
+
+<button (click)="onSave()">Save</button>
