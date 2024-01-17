@@ -7,6 +7,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { CourseComponent } from './course/course.component';
 import { BuiltinDirectiveComponent } from './builtin-directive/builtin-directive.component';
 import { Assignment1Component } from './assignment1/assignment1.component';
+import { InsightComponent } from './insight/insight.component';
+import { Test1Component } from './insight/test1/test1.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { Assignment1Component } from './assignment1/assignment1.component';
     CourseComponent,
     BuiltinDirectiveComponent,
     Assignment1Component,
+    InsightComponent,
+    Test1Component,
   ],
   imports: [
     CommonModule,

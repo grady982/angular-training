@@ -1,0 +1,10 @@
+<div style="background-color: white;padding: 10px;">
+    <!-- <p>{{ getTitle() }} component works!</p> -->
+    <p>{{ title }}</p>
+
+    <input type="text" [disabled]="!enable">
+    <button type="button" (click)="enable = !enable">
+        {{ enable ? '關閉' : '啟用' }}
+    </button>
+</div>
+

@@ -6,6 +6,13 @@
 <button (click)="isDisplay = !isDisplay">{{ isDisplay ? '隱藏' : '顯示' }}</button>
 <p *ngIf="isDisplay">如果 isDisplay 你可以看到我</p>
 
+<h3>ngIf; Else</h3>
+<button (click)="isError = !isError">切換訊息狀態</button>
+<p *ngIf="!isError;else errorBlock">訊息正常</p>
+<ng-template #errorBlock>
+    <p class="error-info">訊息錯誤</p>
+</ng-template>
+
 <h3>ngFor</h3>
 <button (click)="onAddButtonClick()">Add Item</button>
 <ul>
