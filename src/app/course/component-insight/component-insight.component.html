@@ -1,0 +1,10 @@
+
+<button type="button" (click)="showChildComponent = !showChildComponent">
+    {{ showChildComponent ? '移除 Child' : '顯示 Child' }}
+</button>
+<div class="parent">
+    <p>component-insight works!</p>
+    <div class="child">
+        <app-child *ngIf="showChildComponent" [data]="message"></app-child>
+    </div>
+</div>
