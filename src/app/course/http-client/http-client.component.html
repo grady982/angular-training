@@ -1,0 +1,11 @@
+<h1> Http Client </h1>
+
+<select [ngModel]="selectedCity" (ngModelChange)="onSelect($event)">
+    <option *ngFor="let city of cityList" [value]="city">
+        {{ city }}
+    </option>
+</select>
+<div>
+    <h2>天氣預測</h2>
+    <p>{{ result }}</p>
+</div>

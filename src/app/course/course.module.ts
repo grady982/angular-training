@@ -10,6 +10,7 @@ import { Assignment1Component } from './assignment1/assignment1.component';
 import { ComponentInsightComponent } from './component-insight/component-insight.component';
 import { ServiceInsightComponent } from './service-insight/service-insight.component';
 import { ChildComponent } from './component-insight/child/child.component';
+import { HttpClientComponent } from './http-client/http-client.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,12 @@ import { ChildComponent } from './component-insight/child/child.component';
     ComponentInsightComponent,
     ServiceInsightComponent,
     ChildComponent,
+    HttpClientComponent,
   ],
   imports: [
     CommonModule,
     CourseRoutingModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class CourseModule { }

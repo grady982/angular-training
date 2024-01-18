@@ -4,3 +4,9 @@ export interface ToDo {
     isUrgent: boolean;
     isFinish: boolean;
 }
+
+export interface ForecaseRsp {
+    success: boolean;
+    result: any;
+    records: any;
+}

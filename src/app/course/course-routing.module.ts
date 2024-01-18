@@ -6,6 +6,7 @@ import { BuiltinDirectiveComponent } from './builtin-directive/builtin-directive
 import { Assignment1Component } from './assignment1/assignment1.component';
 import { ServiceInsightComponent } from './service-insight/service-insight.component';
 import { ComponentInsightComponent } from './component-insight/component-insight.component';
+import { HttpClientComponent } from './http-client/http-client.component';
 
 const routes: Routes = [
   { 
@@ -16,7 +17,8 @@ const routes: Routes = [
       { path: 'builtin-directive', component: BuiltinDirectiveComponent },
       { path: 'assignment1', component: Assignment1Component },
       { path: 'component-insight', component: ComponentInsightComponent },
-      { path: 'service-insight', component: ServiceInsightComponent }
+      { path: 'service-insight', component: ServiceInsightComponent },
+      { path: 'http-client', component: HttpClientComponent }
     ]
   },
 ];
