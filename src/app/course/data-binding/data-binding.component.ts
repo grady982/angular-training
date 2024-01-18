@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CourseService } from 'src/app/core/course.service';
 
 @Component({
   selector: 'app-data-binding',
@@ -22,7 +23,9 @@ export class DataBindingComponent {
   // two way binding
   isChecked2: boolean = true;
 
-  constructor() {}
+  constructor(
+    private courseService: CourseService
+  ) {}
 
   getTitle() {
     return 'data binding';

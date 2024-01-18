@@ -5,7 +5,9 @@ import { CourseService } from 'src/app/core/course.service';
   selector: 'app-service-insight',
   templateUrl: './service-insight.component.html',
   styleUrls: ['./service-insight.component.scss'],
-  providers: [CourseService]
+  providers: [
+    CourseService
+  ]
 })
 export class ServiceInsightComponent implements OnInit {
   
@@ -17,8 +19,7 @@ export class ServiceInsightComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.mockData = await this.courseService.getMockData();
-
-    console.log('mockData', this.mockData);
+    
   }
 
 

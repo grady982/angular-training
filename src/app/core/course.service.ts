@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 
-// {
-//   providedIn: 'root'
-// }
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class CourseService {
 
   constructor() { }
@@ -11,7 +10,7 @@ export class CourseService {
   getMockData(): Promise<string> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve("Course Service TEST~");
+        resolve("Course Service Work ~");
       }, 800);
     });
   }

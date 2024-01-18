@@ -11,7 +11,6 @@ import { ComponentInsightComponent } from './component-insight/component-insight
 import { ServiceInsightComponent } from './service-insight/service-insight.component';
 import { ChildComponent } from './component-insight/child/child.component';
 
-
 @NgModule({
   declarations: [
     DataBindingComponent,

@@ -62,6 +62,6 @@ export class BuiltinDirectiveComponent implements OnInit {
   }
 
   setUpperCaseName(event: string) {
-    this.item2 = event.toLocaleUpperCase();
+    this.item2 = event.toUpperCase();
   }
 }
