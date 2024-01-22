@@ -18,6 +18,12 @@
     <p [ngClass]="{ 'blueColor': true }">blue color by ngClass</p>
     <p [ngStyle]="{ 'color': 'red'}">red color by ngStyle</p>
 
+
+    <button type="button" (click)="isError = !isError">切換訊息狀態</button>
+    <p [ngClass]="{ 'error-text': isError}">{{ isError ? '訊息錯誤' : '訊息正確'}}</p>
+    <p [ngStyle]="{ 'color': isError ? 'red' : 'black'}">{{ isError ? '訊息錯誤' : '訊息正確'}}</p>
+
+
     <hr>
 
     <h2> Event Binding </h2>

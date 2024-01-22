@@ -15,6 +15,7 @@ export class DataBindingComponent {
   // property binding
   imageUrl: string = '/assets/image/safe.jpg';
   isButtonDisabled: boolean = true;
+  isError: boolean = true;
 
   // event binding
   result: string = '';
