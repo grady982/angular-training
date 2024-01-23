@@ -3,6 +3,11 @@
 <button type="button" (click)="showChildComponent = !showChildComponent">
     {{ showChildComponent ? '移除 Child' : '顯示 Child' }}
 </button>
+
+<div style="margin-top: 10px;">
+    <input type="text" [(ngModel)]="message">
+</div>
+
 <div class="parent">
     <p>component-insight works!</p>
     <div class="child">
